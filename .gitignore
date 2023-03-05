@@ -1,0 +1,13 @@
+Portafolio.sln
+
+.vs/
+
+Portafolio/bin/
+
+Portafolio/obj/
+
+Portafolio/wwwroot/favicon.ico
+
+Portafolio/wwwroot/js/
+
+Portafolio/wwwroot/lib/

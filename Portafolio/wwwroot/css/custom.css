@@ -1,0 +1,33 @@
+﻿#Marcophoto {
+    height: 636px;
+    width: 320px;
+    margin: 2rem 0;
+    border-radius: 50%;
+}
+.welcomeSection {
+    margin: 5rem 0 10rem;
+    color:white;
+    background-color:cornflowerblue;
+}
+.welcomeSection h1 {
+    margin-bottom:1rem;
+}
+.welcomeSection p {
+    font-family: sans-serif;
+    line-height:1.5;
+    font-size: 1.25rem;
+}
+#dotnetimg {
+    width:500px;
+}
+.headercustom {
+    font-weight:bold;
+}
+.skills ul{
+    list-style:none;
+    padding-left:0;
+}
+.skills i {
+    color:deepskyblue;
+    font-size:50px
+}
