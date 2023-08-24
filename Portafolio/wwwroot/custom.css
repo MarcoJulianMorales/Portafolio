@@ -1,0 +1,52 @@
+﻿#foto {
+    width: 250px;
+    margin: 2rem;
+    border-radius: 50%
+}
+
+.welcome-section{
+    margin: 5rem 0 10rem 0;
+    color:white;
+}
+
+.welcome-section h1 {
+    margin-bottom: 1rem;
+}
+
+.welcome-section p {
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+
+#img-dotnet {
+    width:200px
+}
+
+.cabecera{
+    font-weight:bold;
+}
+
+.experience{
+    margin-top: -100px;
+}
+
+.backend {
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0 5px 5px 0 gray;
+}
+
+.frontend {
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 5px 5px 0 gray;
+}
+
+.skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills i {
+    color: #0d6edf;
+    font-size: 50px;
+}
