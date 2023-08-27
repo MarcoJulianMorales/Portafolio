@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Portafolio.bundle.scp.css"
     },
     {
+      "Id": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\cantera.png",
+      "PackagePath": "staticwebassets\\cantera.png"
+    },
+    {
       "Id": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -17,12 +21,20 @@
       "PackagePath": "staticwebassets\\dotnet.png"
     },
     {
+      "Id": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\exela.jpg",
+      "PackagePath": "staticwebassets\\exela.jpg"
+    },
+    {
       "Id": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
       "Id": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\foto.jpg",
       "PackagePath": "staticwebassets\\foto.jpg"
+    },
+    {
+      "Id": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\google.png",
+      "PackagePath": "staticwebassets\\google.png"
     },
     {
       "Id": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\js\\site.js",

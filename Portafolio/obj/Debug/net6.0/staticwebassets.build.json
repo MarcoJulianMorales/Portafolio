@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XIBoReT+TlbU1HfIF9mWo6dH79ktA8fKdaLXulZpabU=",
+  "Hash": "5RVvotMSMciZqr4eqk5P5aYAX68K4Hyo6VJgGTntgP0=",
   "Source": "Portafolio",
   "BasePath": "_content/Portafolio",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Portafolio.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\cantera.png",
+      "SourceId": "Portafolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\",
+      "BasePath": "_content/Portafolio",
+      "RelativePath": "cantera.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\cantera.png"
     },
     {
       "Identity": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\css\\site.css",
@@ -102,6 +119,23 @@
       "OriginalItemSpec": "wwwroot\\dotnet.png"
     },
     {
+      "Identity": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\exela.jpg",
+      "SourceId": "Portafolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\",
+      "BasePath": "_content/Portafolio",
+      "RelativePath": "exela.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exela.jpg"
+    },
+    {
       "Identity": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\favicon.ico",
       "SourceId": "Portafolio",
       "SourceType": "Discovered",
@@ -134,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\foto.jpg"
+    },
+    {
+      "Identity": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\google.png",
+      "SourceId": "Portafolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\",
+      "BasePath": "_content/Portafolio",
+      "RelativePath": "google.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\google.png"
     },
     {
       "Identity": "C:\\Projects\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\js\\site.js",

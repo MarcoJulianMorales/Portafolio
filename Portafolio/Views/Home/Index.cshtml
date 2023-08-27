@@ -4,36 +4,13 @@
     ViewData["Title"] = "Inicio";
 }
 
+@*<h3>Ejemplo de Servicios alcances</h3>
+<div>Transient: <b style="color:red">@Model.ejemplo1.transient</b></div>
+<div>Scoped: <b style="color:green">@Model.ejemplo1.scoped</b></div>
+<div>Singleton: <b style="color:blue">@Model.ejemplo1.singleton</b></div>*@
+
 <partial name="_Presentacion"></partial>
 
 <partial name="_Habilidades"></partial>
 
-@if(Model.proyectos is not null){
-    <div class="text-center" style="padding-top: 6rem;">
-        <h1>Mis trabajos recientes</h1>
-        <p>
-            Aquí puedes ver algunos de mis trabajos más recientes.
-        </p>
-    </div>
-
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            @foreach(var pr in Model.proyectos)
-            {
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="@pr.imageUrl" class="card-img-top" alt="imagen proyecto"/>
-                        <div class="card-body">
-                            <h5 class="card-title">@pr.title</h5>
-                            <p class="card-text">@pr.description</p>
-                        </div>
-
-                        <div class="card-footer">
-                            <a class="btn btn-primary" href="@pr.link" target="_blank" rel="noopener noreferrer">Visitar</a>
-                        </div>
-                    </div>
-                </div>
-            }
-        </div>
-    </div>
-}
+<partial name="_SeccionProyectos" model="Model.proyectos"></partial>

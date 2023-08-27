@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Portafolio.Models;
+using Portafolio.Servicios;
 using System.Diagnostics;
 
 namespace Portafolio.Controllers
@@ -7,32 +8,69 @@ namespace Portafolio.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IRepositorioProyectos repo;
+        private readonly ServicioTransient servicioTransient;
+        private readonly ServicioScoped servicioScoped;
+        private readonly ServicioSingleton servicioSingleton;
+        private readonly IServicioEmailSendGrid servicioEmailSendGrid;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(
+            ILogger<HomeController> logger, 
+            IRepositorioProyectos repo,
+            ServicioTransient servicioTransient,
+            ServicioScoped servicioScoped,
+            ServicioSingleton servicioSingleton,
+            IServicioEmailSendGrid servicioEmailSendGrid
+            )
         {
             _logger = logger;
+            this.repo = repo;
+            this.servicioTransient = servicioTransient;
+            this.servicioScoped = servicioScoped;
+            this.servicioSingleton = servicioSingleton;
+            this.servicioEmailSendGrid = servicioEmailSendGrid;
         }
 
         public IActionResult Index()
         {
-            var proyects = obtenerProyectos().Take(3).ToList();
-            var modelo = new HomeIndexDTO() { proyectos = proyects };
+            var guidDTO = new EjemploGuidDTO()
+            {
+                transient = servicioTransient.obtenerGuid,
+                scoped = servicioScoped.obtenerGuid,
+                singleton = servicioSingleton.obtenerGuid,
+            };
+            var repositorioProyectos = new RepositorioProyectos();
+            var proyects = repositorioProyectos.obtenerProyectos().Take(3).ToList();
+            var modelo = new HomeIndexDTO() { proyectos = proyects, ejemplo1 = guidDTO };
             return View(modelo);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Proyectos()
+        {
+            var proyectos = repo.obtenerProyectos();
+
+            return View(proyectos);
+        }
+
+        public IActionResult Contacto()
         {
             return View();
         }
 
-        private List<ProyectoDTO> obtenerProyectos()
+        [HttpPost]
+        public async Task<IActionResult> Contacto(ContactoDTO contacto)
         {
-            return new List<ProyectoDTO> {
-                new ProyectoDTO { title = "Exela", description = "software developer", imageUrl = "/exela.jpg", link = "https://www.exelatech.com/" },
-                new ProyectoDTO { title = "Exela", description = "configuration analyst", imageUrl = "/exela.jpg", link = "https://www.exelatech.com/" },
-                new ProyectoDTO { title = "Cantera", description = "software developer", imageUrl = "/cantera.png", link = "https://canteradigital.io/" },
-                new ProyectoDTO { title = "Google", description = "software developer", imageUrl = "/google.png", link = "https://www.google.com/?hl=es" },
-            };
+            await servicioEmailSendGrid.enviar(contacto);
+            return RedirectToAction("Gracias");
+        }
+
+        public IActionResult Gracias()
+        {
+            return View();
+        }
+        public IActionResult Privacy()
+        {
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
